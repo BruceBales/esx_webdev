@@ -116,11 +116,11 @@ AddEventHandler('esx_webdev:robberyStarted', function(currentStore)
 							reward =  math.random(500, 1000)
 							xp_reward = math.random(5, 12)
 							grade = 2
-						elseif experience >= 250 and experience < 500 then
+						elseif experience >= 250 and experience < 1000 then
 							reward =  math.random(1000, 2500)
 							xp_reward = math.random(6, 12)
 							grade = 3
-						elseif experience >= 500 then
+						elseif experience >= 1000 then
 							reward =  math.random(2500, 10000)
 							xp_reward = math.random(15, 30)
 							grade = 4
