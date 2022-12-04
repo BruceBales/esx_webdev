@@ -1,36 +1,22 @@
-# esx_holdup
-This resource for ESX adds stores around the island for criminals to rob!
+# esx_webdev
+Software engineering job for FiveM/ESX
 
 ### Requirements
-- [esx_policejob](https://github.com/ESX-Org/esx_policejob)
+- ESX
 
 ## Download & Installation
 
-### Using [fvm](https://github.com/qlaffont/fvm-installer)
-```
-fvm install --save --folder=esx esx-org/esx_holdup
-```
+- Download this repo, place in `esx_webdev` inside of resources folder
 
-### Using Git
-```
-cd resources
-git clone https://github.com/ESX-Org/esx_holdup [esx]/esx_holdup
-```
-
-### Manually
-- Download https://github.com/ESX-Org/esx_holdup/archive/master.zip
-- Put it in the `[esx]` directory
-
-## Installation
 - Add this to your `server.cfg`:
 
 ```
-start esx_holdup
+start esx_webdev
 ```
 
 # Legal
 ### License
-esx_holdup - rob stores
+esx_webdev - do things
 
 Copyright (C) 2015-2018 Jérémie N'gadi
 

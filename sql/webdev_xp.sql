@@ -1,0 +1,1 @@
+CREATE TABLE `webdev_xp` (\n  `playerid` varchar(45) NOT NULL,\n  `xp` int(11) DEFAULT NULL,\n  PRIMARY KEY (`playerid`)\n) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
