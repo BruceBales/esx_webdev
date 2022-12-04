@@ -103,20 +103,26 @@ AddEventHandler('esx_webdev:robberyStarted', function(currentStore)
 						local grade = 0
 
 						local reward = 0
-						if experience >= 0 and experience <= 50 then
+						local xp_reward = 0
+						if experience >= 0 and experience < 50 then
 							reward =  math.random(10, 100)
+							xp_reward = math.random(1, 10)
 							grade = 0
-						elseif experience >= 50 and experience <= 100 then
+						elseif experience >= 50 and experience < 100 then
 							reward =  math.random(100, 500)
+							xp_reward = math.random(5, 10)
 							grade = 1
-						elseif experience >= 100 and experience <= 250 then
+						elseif experience >= 100 and experience < 250 then
 							reward =  math.random(500, 1000)
+							xp_reward = math.random(5, 12)
 							grade = 2
-						elseif experience >= 250 and experience <= 500 then
+						elseif experience >= 250 and experience < 500 then
 							reward =  math.random(1000, 2500)
+							xp_reward = math.random(6, 12)
 							grade = 3
-						elseif experience >= 500 and experience <= 1000 then
+						elseif experience >= 500 then
 							reward =  math.random(2500, 10000)
+							xp_reward = math.random(15, 30)
 							grade = 4
 						end
 
@@ -124,10 +130,10 @@ AddEventHandler('esx_webdev:robberyStarted', function(currentStore)
 						if xPlayer then
 							TriggerClientEvent('esx_webdev:robberyComplete', _source, reward)
 							xPlayer.addMoney(reward)
-							TriggerClientEvent('esx:showNotification', _source, "5 XP added. Current xp: " .. experience + 5)
+							TriggerClientEvent('esx:showNotification', _source, xp_reward .." XP added. Current xp: " .. experience + xp_reward)
 
 							MySQL.Async.execute('UPDATE webdev_xp SET xp = @xp WHERE playerid = @playerid', {
-								['@xp'] 			 = experience + 5,
+								['@xp'] 			 = experience + xp_reward,
 								['@playerid']        = xPlayer.getIdentifier()
 							})
 							

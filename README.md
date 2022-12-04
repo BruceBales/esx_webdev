@@ -1,5 +1,7 @@
 # esx_webdev
-Software engineering job for FiveM/ESX
+Software engineering job for FiveM/ESX.
+
+I used the esx_holdup script as a template because I don't know LUA very well.
 
 ### Requirements
 - ESX
