@@ -1,0 +1,16 @@
+Locales['en'] = {
+  ['shop_robbery'] = 'dev work',
+  ['press_to_rob'] = 'press ~INPUT_CONTEXT~ to ~o~perform work at~s~ ~b~%s~s~',
+  ['robbery_timer'] = 'dev work: ~r~%s~s~ seconds remaning',
+  ['recently_robbed'] = 'work recently finished. Please wait ~y~%s~s~ seconds until you can work here again',
+  ['rob_in_prog'] = '~r~work in progress at ~b~%s~s~',
+  ['started_to_rob'] = 'you started a work at ~y~%s~s~',
+  ['alarm_triggered'] = 'work has started',
+  ['robbery_complete'] = '~r~work successful~s~, you ~o~made~s~ ~g~$%s~s~',
+  ['robbery_complete_at'] = '~r~work successful at ~y~%s~s~',
+  ['robbery_cancelled'] = 'the work has been cancelled!',
+  ['robbery_cancelled_at'] = '~r~The work at ~b~%s~s~ has been cancelled!',
+  ['min_police'] = 'you must be a web developer to take works.',
+  ['robbery_already'] = '~r~Someone else is doing this work.',
+  ['no_threat'] = 'you do not pose a threat to the store keeper',
+}

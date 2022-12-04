@@ -1,0 +1,10 @@
+drwxrwx---   5 1586     zap659606     4096 Apr  4  2021 .
+drwxrwx---  56 1586     zap659606     4096 Jan 20  2021 ..
+-rwxrwx---   1 1586     zap659606      146 Jan 20  2021 .editorconfig
+-rwxrwx---   1 1586     zap659606    35097 Jan 20  2021 LICENSE
+-rwxrwx---   1 1586     zap659606     1300 Jan 20  2021 README.md
+-rwxrwx---   1 1586     zap659606      538 Jan 20  2021 __resource.lua
+drwxrwx---   2 1586     zap659606     4096 Jan 20  2021 client
+-rwxrwx---   1 1586     zap659606     2639 Nov 29 04:19 config.lua
+drwxrwx---   2 1586     zap659606     4096 Jan 20  2021 locales
+drwxrwx---   2 1586     zap659606     4096 Jan 20  2021 server
