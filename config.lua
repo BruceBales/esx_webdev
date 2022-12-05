@@ -14,10 +14,38 @@ Config.MaxDistance    = 20   -- max distance from the robbary, going any longer 
 Config.GiveBlackMoney = false -- give black money? If disabled it will give cash instead
 
 Stores = {
-	["lifeinvader"] = {
+	["lifeinvaderbackend"] = {
 		position = { x = -1049.73, y = -242.09, z = 44.00 },
 		reward = math.random(50, 2000),
-		nameOfStore = "LifeInvader",
+		nameOfStore = "LifeInvader - Backend",
+		secondsRemaining = 30, -- seconds
+		lastRobbed = 0
+	},
+	["lifeinvaderdevops"] = {
+		position = { x = -1053.95, y = -230.19, z = 44.00 },
+		reward = math.random(50, 2000),
+		nameOfStore = "LifeInvader - DevOps",
+		secondsRemaining = 30, -- seconds
+		lastRobbed = 0
+	},
+	["lifeinvaderfrontend"] = {
+		position = { x = -1057.78, y = -245.69, z = 44.00 },
+		reward = math.random(50, 2000),
+		nameOfStore = "LifeInvader - Frontend",
+		secondsRemaining = 30, -- seconds
+		lastRobbed = 0
+	},
+	["realestatefrontend"] = {
+		position = { x = -145.98, y = -638.10, z = 168.82 },
+		reward = math.random(50, 2000),
+		nameOfStore = "Real Estate Agency - Frontend",
+		secondsRemaining = 30, -- seconds
+		lastRobbed = 0
+	},
+	["realestatebackend"] = {
+		position = { x = -145.98, y = -635.12, z = 168.82 },
+		reward = math.random(50, 2000),
+		nameOfStore = "Real Estate Agency - Backend",
 		secondsRemaining = 30, -- seconds
 		lastRobbed = 0
 	},
