@@ -90,9 +90,35 @@ AddEventHandler('esx_webdev:startTimer', function()
 	end)
 end)
 
+local Blips = {}
+
 Citizen.CreateThread(function()
+	while true do
+		Citizen.Wait(1)
+		refreshBlips()
+	end
+end)
+
+function refreshBlips()
+	ESX.PlayerData = ESX.GetPlayerData()
+	removeBlips()
+	if ESX.PlayerData.job.name == "webdev" then
+		addBlips()
+	end
+end
+
+function removeBlips()
+	for k,v in pairs(Stores) do
+		if Blips[k] ~= nil then
+			RemoveBlip(Blips[k])
+		end
+	end
+end
+
+function addBlips()
 	for k,v in pairs(Stores) do
 		local blip = AddBlipForCoord(v.position.x, v.position.y, v.position.z)
+		Blips[k] = blip
 		SetBlipSprite(blip, 683)
 		SetBlipScale(blip, 0.8)
 		SetBlipAsShortRange(blip, true)
@@ -101,7 +127,7 @@ Citizen.CreateThread(function()
 		AddTextComponentString(_U('shop_robbery'))
 		EndTextCommandSetBlipName(blip)
 	end
-end)
+end
 
 Citizen.CreateThread(function()
 	while true do
